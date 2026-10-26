@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HK Home Designer | Freelance Architect and Home Design Services</title>
+<meta name="description" content="HK Home Designer offers 2D floor plans, 3D visualization, modern home architecture and luxury villa design for clients in Pakistan and worldwide.">
+<meta property="og:title" content="HK Home Designer: Design Your Dream Home with Us">
+<meta property="og:description" content="Freelance architect and home designer. Floor plans, 3D designs, villas and custom homes.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--gold:#c9a24b;--bg:#0a0a0a;--fg:#f4f1ea;--mut:#a9a495;--lbg:#f7f5f0;--lfg:#141414;--lmut:#5f5b50;--lcard:#fff;--lline:#e2ddd0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--lbg:#121212;--lfg:#f4f1ea;--lmut:#a9a495;--lcard:#1a1a1a;--lline:#2c2c2c}}
+:root[data-theme="dark"]{--lbg:#121212;--lfg:#f4f1ea;--lmut:#a9a495;--lcard:#1a1a1a;--lline:#2c2c2c}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{font:16px/1.7 Manrope,system-ui,sans-serif;background:var(--bg);color:var(--fg);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#0a0a0a;z-index:30}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.08}
+h2{font-size:clamp(2.1rem,5vw,3.4rem);margin-bottom:.3em}
+h3{font-size:1.6rem}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1160px;margin:auto;padding:0 20px}
+section{padding:90px 0}
+.dark{background:var(--bg);color:var(--fg);--fbg:#151515;--fbd:#333;--cbg:#141414;--cbd:#2a2a2a;--m:var(--mut)}
+.light{background:var(--lbg);color:var(--lfg);--fbg:var(--lcard);--fbd:var(--lline);--cbg:var(--lcard);--cbd:var(--lline);--m:var(--lmut)}
+.lead,.m{color:var(--m)}
+.lead{max-width:620px;margin-bottom:44px}
+.gold{color:var(--gold)}
+.btn{display:inline-block;padding:14px 28px;border:1px solid var(--gold);background:none;color:var(--gold);font:700 .95rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn.fill{background:var(--gold);color:#0a0a0a}
+.btn:hover{transform:translateY(-2px);background:var(--gold);color:#0a0a0a}
+.btn.fill:hover{background:#e0bd6c}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:#0a0a0a;border-bottom:1px solid #2a2a2a;color:#f4f1ea}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.5rem "Cormorant Garamond",serif;text-decoration:none;color:#f4f1ea}
+.logo b{color:var(--gold)}
+.links{display:flex;gap:24px;list-style:none;padding:0}
+.links a{text-decoration:none;font-size:.9rem;color:#f4f1ea;padding:6px 0;border-bottom:1px solid transparent}
+.links a:hover{border-color:var(--gold);color:var(--gold)}
+.burger{display:none;background:none;border:1px solid #444;color:#f4f1ea;font-size:1.3rem;padding:6px 12px;cursor:pointer}
+@media(max-width:900px){.burger{display:block}.links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:#0a0a0a;padding:14px 24px 24px;gap:14px;border-bottom:1px solid #2a2a2a}.links.open{display:flex}}
+#home{position:relative;min-height:calc(100vh - 68px);display:flex;align-items:center;overflow:hidden;background:radial-gradient(circle at 75% 60%,#2a2111 0,transparent 55%),linear-gradient(#ffffff0a 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,#ffffff0a 1px,transparent 1px) 0 0/48px 48px,var(--bg);color:#f4f1ea}
+#home .art{position:absolute;right:-4%;bottom:6%;width:min(860px,100%);opacity:.38}
+#home .art path,#home .art rect{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 3.2s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+#home .wrap{position:relative}
+#home .brand{font:600 1.3rem "Cormorant Garamond",serif;color:var(--gold);margin-bottom:14px}
+#home h1{font-size:clamp(2.8rem,8vw,5.6rem);max-width:760px;margin-bottom:18px}
+#home p{max-width:520px;color:#c9c4b4;margin-bottom:32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.split{display:grid;gap:48px;grid-template-columns:1fr 1.2fr;align-items:center}
+@media(max-width:800px){.split{grid-template-columns:1fr}section{padding:68px 0}}
+.photo{aspect-ratio:4/5;border:1px dashed var(--gold);display:grid;place-items:center;text-align:center;padding:24px;background:#0a0a0a;color:#c9c4b4;font-size:.9rem}
+.photo svg{width:80%;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;list-style:none;padding:0}
+.chips li{border:1px solid var(--gold);padding:6px 14px;font-size:.88rem}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--cbg);border:1px solid var(--cbd);padding:28px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.ic{width:44px;height:44px;border:1px solid var(--gold);color:var(--gold);display:grid;place-items:center;margin-bottom:16px;font-size:1.2rem}
+.card p{color:var(--m);font-size:.93rem;margin:8px 0 12px}
+.pr{color:var(--gold);font-weight:700;font-size:.88rem}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{background:none;border:1px solid var(--lline);color:inherit;padding:8px 18px;font:600 .88rem Manrope,sans-serif;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#0a0a0a}
+.pi{position:relative;background:#0a0a0a;color:#f4f1ea;overflow:hidden}
+.pi svg,.pi img{display:block;width:100%;aspect-ratio:400/260;object-fit:cover;background:#101010;transition:transform .5s}
+.pi:hover svg,.pi:hover img{transform:scale(1.05)}
+.pi figcaption{padding:18px 20px 22px;border-top:1px solid #2a2a2a;position:relative;background:#0a0a0a}
+.pi small{color:var(--gold);font-weight:700}
+.pi p{color:#a9a495;font-size:.88rem;margin-top:6px}
+.badge{position:absolute;top:12px;left:12px;background:var(--gold);color:#0a0a0a;font:700 .72rem Manrope,sans-serif;padding:3px 10px}
+.hide{display:none}
+.steps{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));counter-reset:s}
+.step{border-top:2px solid var(--gold);padding-top:18px}
+.step b{font:600 2.6rem "Cormorant Garamond",serif;color:var(--gold);display:block;line-height:1}
+.step h3{font-size:1.4rem;margin:8px 0}
+.step p{color:var(--m);font-size:.92rem}
+.panel{background:#0a0a0a;color:#f4f1ea;border:1px solid var(--gold);padding:clamp(24px,5vw,56px);display:grid;gap:40px;grid-template-columns:1fr 1.1fr;--fbg:#151515;--fbd:#333;--m:#a9a495}
+@media(max-width:860px){.panel{grid-template-columns:1fr}}
+.panel ul{margin:18px 0 0 18px;color:#c9c4b4}
+form{display:grid;gap:14px}
+.two{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+label{font-size:.85rem;font-weight:700;display:grid;gap:6px}
+input,select,textarea{width:100%;padding:12px 14px;background:var(--fbg);border:1px solid var(--fbd);color:inherit;font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.st{min-height:1.4em;font-size:.9rem;color:var(--gold)}
+.card .tq{font:500 1.35rem/1.4 "Cormorant Garamond",serif;color:var(--fg);margin:0}
+.light .card .tq{color:var(--lfg)}
+.tq+p{margin-top:14px;font-weight:700}
+.cl{list-style:none;padding:0;display:grid;gap:12px;margin:22px 0}
+.soc{display:flex;gap:10px;flex-wrap:wrap}
+.soc a{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;text-decoration:none;font-weight:700;font-size:.8rem;color:var(--gold);transition:background .25s,color .25s}
+.soc a:hover{background:var(--gold);color:#0a0a0a}
+footer{background:#050505;color:#c9c4b4;padding:64px 0 28px;border-top:1px solid #2a2a2a}
+.fg{display:grid;gap:36px;grid-template-columns:1.4fr 1fr 1fr 1fr;margin-bottom:36px}
+@media(max-width:800px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fg{grid-template-columns:1fr}}
+footer h4{color:#f4f1ea;margin-bottom:12px}
+footer ul{list-style:none;padding:0;display:grid;gap:8px;font-size:.92rem}
+footer a{text-decoration:none}footer a:hover{color:var(--gold)}
+.cp{border-top:1px solid #2a2a2a;padding-top:20px;font-size:.85rem}
+.wab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:35;background:#25d366;color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:999px;box-shadow:0 6px 20px #0006}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}#home .art path,#home .art rect{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="logo" href="#home">HK <b>Home Designer</b></a>
+<button class="burger" id="bg" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+<ul class="links" id="nv">
+<li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#process">Process</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#contact">Contact</a></li><li><a class="btn fill" style="padding:8px 18px" href="#hire">Hire me</a></li>
+</ul>
+</div>
+</header>
+<main>
+<section id="home" class="dark">
+<svg class="art" viewBox="0 0 400 260" fill="none" stroke="#c9a24b" stroke-width="1.2" aria-hidden="true" id="heroart"></svg>
+<div class="wrap">
+<p class="brand">HK Home Designer</p>
+<h1>Design Your Dream Home with Us</h1>
+<p>Your Vision, Our Design &mdash; Building Dreams, One Home at a Time. Floor plans, 3D designs and complete home architecture for clients in Pakistan and around the world.</p>
+<div class="cta"><a class="btn fill" href="#portfolio">Explore Our Designs</a><a class="btn" href="#hire">Hire Me</a></div>
+</div>
+</section>
+
+<section id="about" class="light">
+<div class="wrap split">
+<div class="photo"><div><svg id="aboutart" viewBox="0 0 400 260" fill="none" stroke="#c9a24b" stroke-width="1.5" aria-hidden="true"></svg>Add your photo here<br>(see ABOUT_PHOTO in the settings)</div></div>
+<div>
+<h2>An architect who designs around your life</h2>
+<!-- Add your real qualifications, experience and years of practice here. -->
+<p class="m">I’m a professional architect and freelance home designer. I help clients turn their ideas into beautiful, functional homes, from the first sketch to the final drawings.</p>
+<p class="m" style="margin-top:14px">Every home starts with a conversation about how you live, your budget and your plot. Then I design plans that are practical, modern and built around your needs.</p>
+<ul class="chips"><li>Freelance architect</li><li>Clients in Pakistan and worldwide</li><li>Remote-friendly workflow</li><li>Designed to your brief</li></ul>
+</div>
+</div>
+</section>
+
+<section id="services" class="dark">
+<div class="wrap">
+<h2>My services</h2>
+<p class="lead">Everything you need to plan, see and build your home. Prices are quoted per project.</p>
+<div class="grid" id="sv"></div>
+</div>
+</section>
+
+<section id="portfolio" class="light">
+<div class="wrap">
+<h2>My portfolio</h2>
+<p class="lead">These are demonstration sample projects, not completed client work. Replace them with your own projects (see PORTFOLIO in the settings).</p>
+<div class="filters" id="fl" role="group" aria-label="Filter projects"></div>
+<div class="grid" id="pf"></div>
+</div>
+</section>
+
+<section id="process" class="dark">
+<div class="wrap">
+<h2>My design process</h2>
+<p class="lead">A clear path from your first idea to the finished drawings.</p>
+<div class="steps" id="st"></div>
+</div>
+</section>
+
+<section id="hire" class="light">
+<div class="wrap">
+<div class="panel dark">
+<div>
+<h2>Hire me for your home design</h2>
+<p class="m">Tell me about your plot, your budget and the home you imagine. I’ll reply with next steps and a quote.</p>
+<ul><li>Free first conversation about your project</li><li>Clear quote before any work begins</li><li>Work done online, wherever you live</li></ul>
+</div>
+<form data-k="Project inquiry" novalidate>
+<div class="two"><label>Name<input name="Name" required autocomplete="name"></label><label>Email<input name="Email" type="email" required autocomplete="email"></label></div>
+<div class="two"><label>Project type<select name="Project type" required><option value="">Choose one</option><option>2D floor plan</option><option>3D design and visualization</option><option>Modern home</option><option>Luxury villa</option><option>Interior design</option><option>Exterior design</option><option>Residential building plans</option><option>Custom home</option></select></label>
+<label>Budget<select name="Budget"><option value="">Not sure yet</option><option>Under 500,000 PKR</option><option>500,000 to 2,000,000 PKR</option><option>2,000,000 PKR and above</option><option>Under USD 2,000</option><option>USD 2,000 and above</option></select></label></div>
+<label>Requirements<textarea name="Requirements" rows="4" required placeholder="Plot size, number of rooms, style, location..."></textarea></label>
+<div class="acts"><button class="btn fill" type="submit">Send inquiry by email</button><button class="btn wa" type="button">Send on WhatsApp</button></div>
+<p class="st" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</section>
+
+<section id="testimonials" class="dark">
+<div class="wrap">
+<h2>Client reviews</h2>
+<p class="lead">The reviews below are sample placeholders. Replace them with genuine testimonials from your clients.</p>
+<div class="grid" id="ts"></div>
+</div>
+</section>
+
+<section id="contact" class="light">
+<div class="wrap split">
+<div>
+<h2>Let’s talk about your home</h2>
+<p class="m">Message me with your idea. I’m happy to discuss it, with no obligation.</p>
+<ul class="cl"><li>Email: <a id="em"></a></li><li>Phone: <a id="ph"></a></li><li id="lc"></li></ul>
+<p style="margin-bottom:18px"><a class="btn fill" id="wl" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+<div class="soc" id="sc"></div>
+</div>
+<form data-k="Contact message" novalidate>
+<label>Name<input name="Name" required autocomplete="name"></label>
+<label>Email<input name="Email" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="Message" rows="5" required></textarea></label>
+<div class="acts"><button class="btn fill" type="submit">Send message by email</button><button class="btn wa" type="button" style="color:inherit">Send on WhatsApp</button></div>
+<p class="st" aria-live="polite"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#home">HK <b>Home Designer</b></a><p style="margin-top:12px;font-size:.92rem">Your Vision, Our Design &mdash; Building Dreams, One Home at a Time.</p><div class="soc" id="fs" style="margin-top:16px"></div></div>
+<div><h4>Navigate</h4><ul><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#process">Process</a></li><li><a href="#hire">Hire me</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Services</h4><ul id="fsv"></ul></div>
+<div><h4>Get in touch</h4><ul><li><a id="fem"></a></li><li><a id="fph"></a></li></ul></div>
+</div>
+<p class="cp">&copy; <span id="yr"></span> HK Home Designer. All rights reserved.</p>
+</div>
+</footer>
+<a class="wab" id="wf" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<script>
+/* ===== SETTINGS: edit these to make the site yours ===== */
+const C={
+  whatsapp:"923255251561",            // country code + number, digits only
+  email:"hk2402250@gmail.com",          // your email
+  phone:"+92 325 5251561",            // shown phone number
+  location:"Pakistan, working with clients worldwide",
+  currency:"PKR",
+  formEndpoint:"",                    // optional: Formspree URL so forms send without an email app
+  social:{Instagram:"https://instagram.com/",Facebook:"https://facebook.com/",LinkedIn:"https://linkedin.com/",YouTube:"https://youtube.com/"} // replace with your profile links
+};
+const SERVICES=[ // price: put a number such as "25,000" to show "From PKR 25,000"; leave "" to show "Contact for a quote"
+["▦","2D house floor plans","Clear, dimensioned layouts planned around how your family lives.","10,000 (standard)"],
+["◈","3D house design and visualization","See your home in 3D before a single brick is laid.","15,000 (premium)"],
+["⌂","Modern home architecture","Clean lines, natural light and smart use of space.","10,000 (standard)"],
+["♛","Luxury villa design","Elegant, spacious villas with a premium finish.","15,000 (premium)"],
+["✦","Interior design","Layouts, finishes and details that make rooms feel right.","15,000 (premium)"],
+["▣","Exterior design","Facades, entrances and outdoor spaces that stand out.","10,000 (standard)"],
+["▤","Residential building plans","Working plans prepared for construction.","10,000 (standard)"],
+["✎","Custom home design","A home shaped entirely by your requirements.","15,000 (premium)"]];
+const STEPS=[["Discuss client requirements","We talk through your needs, plot and budget."],["Create the concept","I sketch layout and style ideas for your approval."],["Develop the floor plan","The chosen concept becomes a detailed 2D plan."],["Prepare 3D designs","You see your home from every angle."],["Deliver the final project","You receive complete, organized files."]];
+const REVIEWS=[["Sample placeholder review. Replace this with a genuine client testimonial.","Sample Client 1"],["Sample placeholder review. Replace this with a genuine client testimonial.","Sample Client 2"],["Sample placeholder review. Replace this with a genuine client testimonial.","Sample Client 3"]];
+/* PORTFOLIO: set img to your own image URL (hosted with the site) to replace the sample drawing */
+const G="#c9a24b";
+const S=b=>`<svg viewBox="0 0 400 260" fill="none" stroke="${G}" stroke-width="1.5" role="img" aria-label="Sample architectural drawing">${b}</svg>`;
+const house=v=>S(`<path d="M20 222H380" stroke-width="2.5"/><rect x="${50+v*20}" y="130" width="170" height="92"/><rect x="${100-v*20}" y="62" width="200" height="68"/><path d="M${44+v*20} 130H${226+v*20}M${94-v*20} 62H${306-v*20}" stroke-width="3.5"/><g fill="${G}" fill-opacity=".25"><rect x="${120-v*20}" y="80" width="70" height="34"/><rect x="${215-v*20}" y="80" width="70" height="34"/><rect x="${70+v*20}" y="150" width="90" height="48"/></g><rect x="${185+v*20}" y="156" width="28" height="66"/><circle cx="335" cy="190" r="26"/>`);
+const villa=v=>S(`<path d="M20 222H380" stroke-width="2.5"/><rect x="70" y="118" width="260" height="104"/><path d="M48 118H352L322 76H78Z"/><path d="M${v?"110 118v104M160 118v104M240 118v104M290 118v104":"120 118v104M200 118v104M280 118v104"}"/><g fill="${G}" fill-opacity=".25"><rect x="130" y="138" width="56" height="40"/><rect x="214" y="138" width="56" height="40"/></g><path d="M300 236q20 8 80 0"/>`);
+const plan=v=>{const L=v?["Lounge","Kitchen","Bed 1","Bed 2","Bath"]:["Living","Kitchen","Bed 1","Bed 2","Bath"];return S(`<rect x="40" y="30" width="320" height="200" stroke-width="3"/><path d="M40 130H220M220 30V230M220 120H360M130 130V230M290 120V230"/><g fill="${G}" stroke="none" font-size="11" font-family="Manrope,sans-serif"><text x="90" y="86">${L[0]}</text><text x="260" y="76">${L[1]}</text><text x="68" y="184">${L[2]}</text><text x="150" y="184">${L[3]}</text><text x="236" y="180">${L[4]}</text></g>`)};
+const iso=(y,h)=>S(`<path d="M200 ${y}L320 ${y+55}L200 ${y+110}L80 ${y+55}Z" fill="${G}" fill-opacity=".3"/><path d="M80 ${y+55}V${y+55+h}L200 ${y+110+h}V${y+110}Z" fill="${G}" fill-opacity=".1"/><path d="M320 ${y+55}V${y+55+h}L200 ${y+110+h}V${y+110}Z" fill="${G}" fill-opacity=".2"/>`);
+const PORTFOLIO=[
+{t:"Modern family house",c:"Houses",d:"Sample concept with flat roof slabs and large windows.",a:house(0),img:""},
+{t:"Luxury villa with pool",c:"Villas",d:"Sample concept with a columned entrance and pool.",a:villa(0),img:""},
+{t:"3-bedroom floor plan",c:"Floor plans",d:"Sample 2D layout with labelled rooms.",a:plan(0),img:""},
+{t:"3D massing study",c:"3D models",d:"Sample isometric view of a two-level home.",a:iso(90,50),img:""},
+{t:"Split-level home",c:"Houses",d:"Sample concept with staggered volumes.",a:house(1),img:""},
+{t:"Garden villa",c:"Villas",d:"Sample concept with a wide, symmetrical front.",a:villa(1),img:""},
+{t:"Compact family plan",c:"Floor plans",d:"Sample 2D layout for a smaller plot.",a:plan(1),img:""},
+{t:"3D courtyard model",c:"3D models",d:"Sample isometric view of a single-level home.",a:iso(50,80),img:""}];
+/* ===== end of settings ===== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const wa=t=>`https://wa.me/${C.whatsapp}?text=${encodeURIComponent(t)}`;
+$("#heroart").innerHTML=house(0).replace(/<svg[^>]*>|<\/svg>/g,"");
+$("#aboutart").innerHTML=villa(0).replace(/<svg[^>]*>|<\/svg>/g,"");
+$("#sv").innerHTML=SERVICES.map(s=>`<article class="card"><div class="ic" aria-hidden="true">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p><span class="pr">${s[3]?"From "+C.currency+" "+s[3]:"Contact for a quote"}</span></article>`).join("");
+const cats=["All",...new Set(PORTFOLIO.map(p=>p.c))];
+$("#fl").innerHTML=cats.map((c,i)=>`<button type="button" data-c="${c}" aria-pressed="${i==0}">${c}</button>`).join("");
+$("#pf").innerHTML=PORTFOLIO.map(p=>`<figure class="pi" data-c="${p.c}">${p.img?`<img src="${p.img}" alt="${p.t}" loading="lazy">`:p.a}<span class="badge">Sample</span><figcaption><small>${p.c}</small><h3>${p.t}</h3><p>${p.d}</p></figcaption></figure>`).join("");
+$("#fl").onclick=e=>{const b=e.target.closest("button");if(!b)return;$$("#fl button").forEach(x=>x.setAttribute("aria-pressed",x==b));$$(".pi").forEach(f=>f.classList.toggle("hide",b.dataset.c!="All"&&f.dataset.c!=b.dataset.c))};
+$("#st").innerHTML=STEPS.map((s,i)=>`<div class="step"><b>${i+1}</b><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
+$("#ts").innerHTML=REVIEWS.map(r=>`<article class="card"><span class="badge" style="position:static;display:inline-block;margin-bottom:14px">Placeholder</span><p class="tq">“${r[0]}”</p><p>${r[1]}</p></article>`).join("");
+$("#fsv").innerHTML=SERVICES.slice(0,6).map(s=>`<li><a href="#services">${s[1]}</a></li>`).join("");
+[["#em","#fem"].forEach(i=>{$(i).textContent=C.email;$(i).href="mailto:"+C.email}),["#ph","#fph"].forEach(i=>{$(i).textContent=C.phone;$(i).href="tel:"+C.phone.replace(/[^+\d]/g,"")})];
+$("#lc").textContent="Location: "+C.location;
+$("#wl").href=$("#wf").href=wa("Hello HK Home Designer, I’d like to discuss a home design project.");
+const soc=Object.entries(C.social).map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener" aria-label="${n}" title="${n}">${n.slice(0,2)}</a>`).join("");
+$("#sc").innerHTML=$("#fs").innerHTML=soc;
+$("#yr").textContent=new Date().getFullYear();
+const nv=$("#nv"),bg=$("#bg");
+bg.onclick=()=>{const o=nv.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.innerHTML=o?"&#10005;":"&#9776;"};
+nv.onclick=e=>{if(e.target.closest("a")){nv.classList.remove("open");bg.setAttribute("aria-expanded",false);bg.innerHTML="&#9776;"}};
+function send(f,mode){
+  if(!f.reportValidity())return;
+  const d=Object.fromEntries(new FormData(f)),st=f.querySelector(".st");
+  const txt=`${f.dataset.k} from the HK Home Designer website\n`+Object.entries(d).map(([k,v])=>`${k}: ${v||"-"}`).join("\n");
+  if(mode=="wa"){window.open(wa(txt),"_blank","noopener");st.textContent="Opening WhatsApp with your message ready to send.";return}
+  if(C.formEndpoint){
+    fetch(C.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)})
+    .then(r=>{if(!r.ok)throw 0;f.reset();st.textContent="Thank you. Your message was sent and I’ll reply soon."})
+    .catch(()=>{st.textContent="Sending failed. Please use WhatsApp or email directly."});return}
+  location.href=`mailto:${C.email}?subject=${encodeURIComponent(f.dataset.k)}&body=${encodeURIComponent(txt)}`;
+  st.textContent="Your email app should open with the message ready to send.";
+}
+$$("form").forEach(f=>{f.onsubmit=e=>{e.preventDefault();send(f,"mail")};f.querySelector(".wa").onclick=()=>send(f,"wa")});
+</script>
+</body>
+</html>
